@@ -8,15 +8,15 @@ const getListOfPhotos = (num) =>
     Array.from({length: num}, () => `https://picsum.photos/id/${Math.floor(100 + Math.random() * 20)}/500`)
 
 export function PhotoViewer() {
-    const [selected, setSelected] = useState(-1);
+    const [selected, setSelected] = useState();
     const [listOfPhotos] = useState(getListOfPhotos(20));
 
     return (
-        <div className={"container"}>
-            <div className={"photoContainer"}>
+        <div className="container">
+            <div className="photoContainer">
                 {
-                    selected >= 0
-                        ? <Photo onClick={null} imgSrc={listOfPhotos[selected]} isSelected={false}/>
+                    selected !== undefined
+                        ? <Photo imgSrc={listOfPhotos[selected]}/>
                         : <p>Select a photo from below</p>
                 }
             </div>
