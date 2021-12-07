@@ -6,5 +6,8 @@
 }
 
 .photoContainer {
+    display: flex;
     min-height: 50%;
+    align-items: center;
+    justify-content: center;
 }
