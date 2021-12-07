@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.photoContainer {
+    min-height: 50%;
+}

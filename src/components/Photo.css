@@ -1,0 +1,9 @@
+img {
+    margin: 0 1vw;
+    object-fit: contain;
+    height: 100%;
+}
+
+.selected {
+    outline: 8px solid aqua;
+}
